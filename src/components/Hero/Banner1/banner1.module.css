@@ -1,0 +1,35 @@
+.bannerContainer {
+  background: rgba(247, 49, 49, 0.9);
+}
+
+.banner1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: min(1100px, 100% - 20px);
+  margin: auto;
+}
+
+.left {
+  margin-top: -50px;
+}
+
+.illustration {
+  width: 300px;
+}
+
+.bannerBtn {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+.description {
+  font-size: 1rem;
+  margin-top: -20px;
+}
