@@ -1,0 +1,30 @@
+.base {
+  all: unset;
+  border: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  padding: 9px 25px;
+  border-radius: 9999px;
+}
+
+.primary {
+  background: #f73131;
+}
+
+.secondary {
+}
+
+.tertiary {
+}
+
+.bordered {
+}
+
+.ghost {
+  color: black;
+}
+
+.ghost:hover {
+  background: rgba(128, 128, 128, 0.1);
+}
