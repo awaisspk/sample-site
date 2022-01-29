@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+}
+
+.tablist {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  width: min(800px, 100%);
+  margin: auto;
+  color: rgb(73, 73, 73);
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.trigger {
+  all: unset;
+  width: max-content;
+  position: relative;
+}
+
+.trigger:focus {
+  color: rgba(247, 49, 49, 0.9);
+}
+
+.underline {
+  height: 3px;
+  background: rgba(247, 49, 49, 0.9);
+  position: relative;
+  top: 11px;
+}
+
+.content {
+  width: 100%;
+}
