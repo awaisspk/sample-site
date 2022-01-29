@@ -1,0 +1,21 @@
+.nav {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 500;
+  gap: 20px;
+}
+
+.linkList {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.link {
+  color: rgb(73, 73, 73);
+}
+
+.link:hover {
+  color: rgba(73, 73, 73, 0.9);
+}
