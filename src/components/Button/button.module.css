@@ -1,24 +1,45 @@
 .base {
   all: unset;
   border: none;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
   color: white;
   padding: 9px 25px;
   border-radius: 9999px;
+  user-select: none;
 }
 
 .primary {
-  background: #f73131;
+  background: rgba(247, 49, 49, 0.9);
+}
+
+.primary:hover {
+  background: rgba(247, 49, 49, 0.8);
 }
 
 .secondary {
+  background: rgba(0, 0, 234, 0.7);
+}
+
+.secondary:hover {
+  background: rgba(0, 0, 234, 0.8);
 }
 
 .tertiary {
+  color: white;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.tertiary:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .bordered {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.bordered:hover {
+  border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 .ghost {
