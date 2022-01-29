@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 270px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 5px;
+  justify-content: end;
+  height: 200px;
+  padding: 20px;
+  padding-top: 100px;
+  padding-bottom: 20px;
+}
+
+.imageContainer {
+  position: relative;
+  top: 100px;
+}
+
+.image {
+  border-radius: 30px;
+}
+
+.pill {
+  background: rgba(51, 51, 51, 0.3);
+  font-size: 0.7rem;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.description {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
