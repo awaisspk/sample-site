@@ -1,14 +1,19 @@
-import { FC } from "react";
 import classNames from "classnames/bind";
 import styles from "./button.module.css";
 
-type ButtonProps = {
-  type: "primary" | "secondary" | "ghost" | "bordered" | "tertiary";
-};
+interface Props extends React.HTMLAttributes<HTMLButtonElement> {
+  type:
+    | "primary"
+    | "secondary"
+    | "ghost"
+    | "bordered"
+    | "tertiary"
+    | "arrows"
+}
 
 let cx = classNames.bind(styles);
 
-export const Button: FC<ButtonProps> = ({ type, children }) => {
+export const Button = ({ type, children, ...rest }: Props) => {
   var btnClass = cx({
     base: true,
     primary: type === "primary",
@@ -20,7 +25,9 @@ export const Button: FC<ButtonProps> = ({ type, children }) => {
 
   return (
     <div>
-      <button className={btnClass}>{children}</button>
+      <button className={btnClass} {...rest}>
+        {children}
+      </button>
     </div>
   );
 };

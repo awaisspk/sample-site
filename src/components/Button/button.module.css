@@ -49,3 +49,14 @@
 .ghost:hover {
   background: rgba(128, 128, 128, 0.1);
 }
+
+.icon {
+  padding: 0;
+  width: 30px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 234, 0.8);
+}
+
