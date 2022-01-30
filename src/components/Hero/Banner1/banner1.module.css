@@ -7,7 +7,13 @@
   justify-content: space-between;
   align-items: center;
   width: min(1100px, 100% - 20px);
+  gap: 30px;
   margin: auto;
+}
+
+.bannerMobile {
+  padding-top: 100px;
+  flex-direction: column;
 }
 
 .left {
@@ -31,5 +37,5 @@
 
 .description {
   font-size: 1rem;
-  margin-top: -20px;
+  margin-top: 20px;
 }

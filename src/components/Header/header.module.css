@@ -1,13 +1,47 @@
-.container {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 80px;
+  gap: 20px;
   width: min(1200px, 100% - 20px);
   margin: auto;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  margin: auto;
+}
+
+.mobileContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.displayMenu {
+  top: 0;
 }
 
 .loginButtons {
   display: flex;
   gap: 15px;
+}
+
+.menuBtn {
+  all: unset;
+}
+
+.mobileMenu {
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  gap: 30px;
 }

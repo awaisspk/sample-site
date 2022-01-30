@@ -1,4 +1,3 @@
-import { SiteLogo } from "@components/Logo";
 import Link from "next/link";
 import styles from "./nav.module.css";
 
@@ -17,11 +16,10 @@ const links = [
   },
 ];
 
-export const MainNav = () => {
+export const MainNav = ({ mobile }: { mobile?: boolean }) => {
   return (
     <nav className={styles.nav}>
-      <SiteLogo />
-      <ul className={styles.linkList}>
+      <ul className={mobile ? styles.mobile : styles.linkList}>
         {links.map((link, i) => (
           <li key={link.name + i}>
             <Link href={link.url}>

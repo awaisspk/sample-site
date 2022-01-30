@@ -1,23 +1,11 @@
 import styles from "./carousel.module.css";
 import Slider from "react-slick";
 import { Card } from "@components/Card";
-import { useRef } from "react";
-import { IconBtn } from "@components/Button/icon-button";
 import { categories } from "@src/data/categories";
 
 export const Categories = () => {
-  const slider1 = useRef<any>(null);
-
-  const next = () => {
-    slider1.current.slickNext();
-  };
-
-  const previous = () => {
-    slider1.current.slickPrev();
-  };
-
   const settings = {
-    arrows: true,
+    arrows: false,
     infinite: false,
     speed: 500,
     slidesToShow: 4,
@@ -53,7 +41,7 @@ export const Categories = () => {
   return (
     <div>
       <div className={styles.container}>
-        <Slider {...settings} ref={slider1} className={styles.slider}>
+        <Slider {...settings} className={styles.slider}>
           {categories.map((data, i) => {
             return (
               <Card

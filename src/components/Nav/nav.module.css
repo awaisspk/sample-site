@@ -12,6 +12,12 @@
   list-style: none;
 }
 
+.mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .link {
   color: rgb(73, 73, 73);
 }

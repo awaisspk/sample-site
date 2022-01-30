@@ -1,10 +1,21 @@
 import { Button } from "@components/Button";
 import styles from "./banner1.module.css";
+import classNames from "classnames/bind";
+import { useMedia } from "react-use";
+
+let cx = classNames.bind(styles);
 
 export const Banner1 = () => {
+  const isMobile = useMedia("(max-width: 580px)", true);
+
+  var bannerCls = cx({
+    banner1: true,
+    bannerMobile: isMobile,
+  });
+
   return (
     <section className={styles.bannerContainer}>
-      <div className={styles.banner1}>
+      <div className={bannerCls}>
         <div className={styles.left}>
           <h1 className={styles.title}>Join world&apos;s best marketplace</h1>
           <p className={styles.description}>

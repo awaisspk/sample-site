@@ -1,14 +1,25 @@
 import { Button } from "@components/Button";
+import classNames from "classnames/bind";
+import { useMedia } from "react-use";
 import styles from "./banner2.module.css";
 
+let cx = classNames.bind(styles);
+
 export const Banner2 = () => {
+  const isMobile = useMedia("(max-width: 580px)", true);
+
+  var bannerCls = cx({
+    banner: true,
+    bannerMobile: isMobile,
+  });
+
   return (
     <section className={styles.bannerContainer}>
-      <div className={styles.banner}>
+      <div className={bannerCls}>
         <div>
           <Illustration />
         </div>
-        <div>
+        <div className={styles.content}>
           <h2 className={styles.title}>Find best talents</h2>
           <p className={styles.description}>
             Find the best Talent and best works based on your skills from around

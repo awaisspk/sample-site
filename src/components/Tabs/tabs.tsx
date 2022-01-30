@@ -1,11 +1,21 @@
-import { Card } from "@components/Card";
 import styles from "./tabs.module.css";
+import classNames from "classnames/bind";
+import { useMedia } from "react-use";
 import * as Tabs from "@radix-ui/react-tabs";
 import { useState } from "react";
 import { Categories } from "@components/Carousel";
 
+let cx = classNames.bind(styles);
+
 export const Tab = () => {
   const [activeTab, setActiveTab] = useState("tab1");
+
+  const isMobile = useMedia("(max-width: 580px)", true);
+
+  var tablistCls = cx({
+    tablist: true,
+    tablistMobile: isMobile,
+  });
 
   return (
     <Tabs.Root
@@ -13,7 +23,7 @@ export const Tab = () => {
       defaultValue="tab1"
       orientation="vertical"
     >
-      <Tabs.List className={styles.tablist} aria-label=" services ">
+      <Tabs.List className={tablistCls} aria-label=" services ">
         <Tabs.Trigger
           onClick={() => setActiveTab("tab1")}
           className={styles.trigger}
@@ -55,14 +65,14 @@ export const Tab = () => {
       </Tabs.Content>
 
       <Tabs.Content className={styles.content} value="tab2">
-         <Categories />
+        <Categories />
       </Tabs.Content>
 
       <Tabs.Content className={styles.content} value="tab3">
-         <Categories />
+        <Categories />
       </Tabs.Content>
       <Tabs.Content className={styles.content} value="tab4">
-         <Categories />
+        <Categories />
       </Tabs.Content>
     </Tabs.Root>
   );

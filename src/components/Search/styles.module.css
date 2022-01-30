@@ -9,6 +9,10 @@
   align-items: center;
 }
 
+.mobileSearch {
+  width: 40px;
+}
+
 .input {
   all: unset;
   height: 100%;

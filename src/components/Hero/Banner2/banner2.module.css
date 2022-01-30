@@ -12,10 +12,22 @@
   gap: 30px;
 }
 
+.bannerMobile {
+  padding-top: 100px;
+  flex-direction: column;
+  padding: 30px;
+}
+
 .title {
-  font-size: 1.em;
+  font-size: 1.3em;
 }
 
 .description {
   font-size: 1.2rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
